@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:AvaloniaMaterialAvalonia.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:dialogHostAvalonia="clr-namespace:DialogHostAvalonia;assembly=DialogHost.Avalonia"
+        xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+        xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaMaterialAvalonia.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="AvaloniaMaterialAvalonia">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+
+    <dialogHostAvalonia:DialogHost Identifier="MainDialogHost">
+        <!-- <Button Content="button" -->
+        <!--         Height="40" -->
+        <!--         Width="80" -->
+        <!--         Command="{Binding StartCommand}" /> -->
+
+        <!-- <controls:FloatingButton Classes="Light" -->
+        <!--                          IsExtended="False"> -->
+        <!--     <Viewbox Stretch="Fill" -->
+        <!--              HorizontalAlignment="Stretch" -->
+        <!--              VerticalAlignment="Stretch"> -->
+        <!--         <avalonia:MaterialIcon Kind="Settings" /> -->
+        <!--     </Viewbox> -->
+        <!-- </controls:FloatingButton> -->
+        <RadioButton Content="ss"/>
+    </dialogHostAvalonia:DialogHost>
+</Window>
